@@ -4,7 +4,7 @@ My 'keep it simple, stupid' emacs &amp; org-mode configuration directory *~/emac
 ## Requirements: 
 
 - Emacs 
-- the font face [Hack][https://github.com/source-foundry/Hack] 
+- the font face [Hack](https://github.com/source-foundry/Hack)
 
 
   
