@@ -1,0 +1,23 @@
+# Let's keep things clean
+auto-save-list/
+backups
+
+# all directories
+**/
+
+# all files that are backups or other
+\#*
+*~
+
+# all .org .md .txt files
+*.org
+
+# various files
+elpa
+transient
+savehist
+url
+ido.*
+session.*
+recentf
+bookmarks
