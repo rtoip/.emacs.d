@@ -43,6 +43,8 @@
 (set-language-environment "UTF-8")
 
 
+;; Show matching parens e.g. for LISP
+(show-paren-mode 1)
 
 
 ;;;; ---------------------- ;;;; 
@@ -90,10 +92,14 @@
 	("~/org/journal.org" "~/org/active.org" "~/org/plan.org")))
 
 ;; org-capture templates
+; Note: in order to make sorting via keywords more effective (journal, etc)
+; additional permanent :tag:s are added to the .org files with the line
+; #+FILETAGS: :tag:
  '(org-capture-templates
    (quote
 	(("n" "note" entry (file (concat org-directory "/journal.org"))
-	  "* %? %U %a"))))) ; the :note: tag is added automatically in the file
+	  "* %?\n%U\n"))))) 
+
 
 ;; Shorter route towards capturing notes
 ; define auxiliary function
