@@ -1,0 +1,2 @@
+- figure out how to archive things
+- plunder https://github.com/psmith1303/emacsd/blob/master/psmith.org

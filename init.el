@@ -46,6 +46,8 @@
 ;; Show matching parens e.g. for LISP
 (show-paren-mode 1)
 
+;; sentences end with single space
+(setq sentence-end-double-space nil)
 
 ;;;; ---------------------- ;;;; 
 ;;;; Org-Mode configuration ;;;; 
@@ -137,8 +139,3 @@
               ("WAITING" :foreground "magenta" :weight bold)
               ("HOLD" :foreground "blue" :weight bold)
               ("CANCELLED" :foreground "forest green" :weight bold))))
-
-;; Formatting for time usage on top level tasks: C-c C-x C-c
-; Set default column view headings: Task Total-Time Time-Stam
-; Note: This is not yet really battle proven.
-(setq org-columns-default-format "%50ITEM(Task) %10CLOCKSUM %16TIMESTAMP_IA")
