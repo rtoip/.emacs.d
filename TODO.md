@@ -1,2 +1,3 @@
 - figure out how to archive things
 - plunder https://github.com/psmith1303/emacsd/blob/master/psmith.org
+- explore how well Emacs notes work with inline images and a corresponding capture functionality

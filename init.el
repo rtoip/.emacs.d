@@ -58,16 +58,16 @@
 
 ;; define the org-mode directory for .org files
 ;; Note that org-mode agenda files have been added manually with: C-c [
-(setq org-directory "~/org")
+(setq org-directory "~/Documents/org")
 
 ;; Make Org mode work with files ending in .org
 ;; The code below is the default in recent emacsen
 ; (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 
 ;; use org-mode for .org and .org-archive files 
-(add-to-list 'load-path (expand-file-name "~/org"))
+(add-to-list 'load-path (expand-file-name org-directory))
 (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\)$" . org-mode))
-(require 'org)
+
 
 ;; add timestamp to task that are DONE
 (setq org-log-done t)
@@ -89,18 +89,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files
-   (quote
-	("~/org/journal.org" "~/org/active.org" "~/org/plan.org")))
-
-;; org-capture templates
-; Note: in order to make sorting via keywords more effective (journal, etc)
-; additional permanent :tag:s are added to the .org files with the line
-; #+FILETAGS: :tag:
+ '(org-agenda-files (quote ("~/Documents/org/active.org")))
  '(org-capture-templates
    (quote
-	(("n" "note" entry (file (concat org-directory "/journal.org"))
-	  "* %?\n%U\n"))))) 
+	(("n" "note" entry
+	  (file
+	   (concat org-directory "/journal.org"))
+	  "* %?
+%U
+")))))
 
 
 ;; Shorter route towards capturing notes
@@ -139,3 +136,9 @@
               ("WAITING" :foreground "magenta" :weight bold)
               ("HOLD" :foreground "blue" :weight bold)
               ("CANCELLED" :foreground "forest green" :weight bold))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
