@@ -1,3 +1,5 @@
-- figure out how to archive things
-- plunder https://github.com/psmith1303/emacsd/blob/master/psmith.org
-- explore how well Emacs notes work with inline images and a corresponding capture functionality
+-[X] figure out how to archive things
+-[ ] plunder https://github.com/psmith1303/emacsd/blob/master/psmith.org
+-[ ] explore how well Emacs notes work with inline images and a corresponding capture functionality
+-[ ] make DEADLINE listings in agenda mode disappear when items have been scheduled. Note: Tried, did not work.
+-[ ] check out advanced autocompletion packages e.g. Helm. Currently *ido-mode* is used. 

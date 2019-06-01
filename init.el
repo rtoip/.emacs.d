@@ -1,10 +1,11 @@
 ;; -*- mode: elisp -*-
 
+
 ;;;; ------------------------- ;;;; 
 ;;;; Emacs basic configuration ;;;; 
 ;;;; ------------------------- ;;;; 
 
-;; version .1
+;; version .3
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -34,7 +35,7 @@
 ;; Font
 ;(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 120)
 ;(set-face-attribute 'default nil :family "Ubuntu Mono" :height 140)
-(set-face-attribute 'default nil :family "Hack" :height 120)
+(set-face-attribute 'default nil :family "Hack" :height 109) ; was 120
 
 ;; Answering yes and no to each question from Emacs can be tedious, a single y or n will suffice.
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -48,6 +49,7 @@
 
 ;; sentences end with single space
 (setq sentence-end-double-space nil)
+
 
 ;;;; ---------------------- ;;;; 
 ;;;; Org-Mode configuration ;;;; 
@@ -67,7 +69,6 @@
 ;; use org-mode for .org and .org-archive files 
 (add-to-list 'load-path (expand-file-name org-directory))
 (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\)$" . org-mode))
-
 
 ;; add timestamp to task that are DONE
 (setq org-log-done t)
@@ -97,7 +98,8 @@
 	   (concat org-directory "/journal.org"))
 	  "* %?
 %U
-")))))
+"))))
+ '(package-selected-packages (quote (intero))))
 
 
 ;; Shorter route towards capturing notes

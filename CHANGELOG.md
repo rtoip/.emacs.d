@@ -2,6 +2,9 @@
 
 Additions, removals, changes, fixes.
 
+## version .3 (2019-06-01)
+Just a checkpoint. Experimented with MELPA a bit. 
+
 ## version .2 (2019-04-06)
 
 ### Additions
