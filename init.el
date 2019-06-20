@@ -80,7 +80,7 @@
 (global-set-key (kbd "C-c b") 'org-iswitchb)
 ;; ...
 (global-set-key (kbd "<f5>") 'org-agenda)
-(global-set-key (kbd "<f6>") 'org-capture)
+(global-set-key (kbd "<f6>") 'create-tag-counts-buffer)
 (global-set-key (kbd "<f7>") 'org-store-link)
 (global-set-key (kbd "<f8>") 'calendar)
 (global-set-key (kbd "<f9>") 'kill-buffer)
