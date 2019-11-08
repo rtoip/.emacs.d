@@ -5,7 +5,7 @@
 ;;;; Emacs basic configuration ;;;; 
 ;;;; ------------------------- ;;;; 
 
-;; version .3
+;; version .4
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -79,6 +79,7 @@
 (global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "C-c b") 'org-iswitchb)
 ;; ...
+(global-set-key (kbd "<f4>") 'visual-line-mode) ; truncate-lines nil/t
 (global-set-key (kbd "<f5>") 'org-agenda)
 (global-set-key (kbd "<f6>") 'create-tag-counts-buffer)
 (global-set-key (kbd "<f7>") 'org-store-link)
@@ -90,7 +91,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files (quote ("~/Documents/org/active.org")))
+ '(org-agenda-files
+   (quote
+	("~/Documents/career/career.org" "~/Documents/org/resources.org" "~/Documents/org/plan.org" "~/Documents/org/active.org")))
  '(org-capture-templates
    (quote
 	(("n" "note" entry

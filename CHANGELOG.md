@@ -2,6 +2,9 @@
 
 Additions, removals, changes, fixes.
 
+## version .4 (2019-11-08)
+* Added F4 binding in order to switch line wrapping (using visual-line-mode instead of truncate-lines nil/t)
+
 ## version .3 (2019-06-01)
 Just a checkpoint. Experimented with MELPA a bit. 
 
