@@ -36,6 +36,9 @@
 ;(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 120)
 ;(set-face-attribute 'default nil :family "Ubuntu Mono" :height 140)
 (set-face-attribute 'default nil :family "Hack" :height 109) ; was 120
+;(set-face-attribute 'default nil :family "PragmataPro" :height 120)  
+;(set-face-attribute 'default nil :family "Iosevka" :height 120) ; or: Iosevka Regular at 140
+;(set-face-attribute 'default nil :family "IBM Plex Mono" :height 110)  
 
 ;; Answering yes and no to each question from Emacs can be tedious, a single y or n will suffice.
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -93,7 +96,7 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files
    (quote
-	("~/Documents/career/career.org" "~/Documents/org/resources.org" "~/Documents/org/plan.org" "~/Documents/org/active.org")))
+	("~/Documents/org/resources.org" "~/Documents/org/plan.org" "~/Documents/org/active.org")))
  '(org-capture-templates
    (quote
 	(("n" "note" entry
