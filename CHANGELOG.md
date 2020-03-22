@@ -2,6 +2,9 @@
 
 Additions, removals, changes, fixes.
 
+## version .5 (2020-02-15)
+* Added *hiding/showing* of emphasis markers
+
 ## version .4 (2019-11-08)
 * Added F4 binding in order to switch line wrapping (using visual-line-mode instead of truncate-lines nil/t)
 

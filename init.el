@@ -32,11 +32,14 @@
 ;; Line-wrapping ON
 ;(global-visual-line-mode 1)
 
+;; Hide emphasis markup 
+(setq org-hide-emphasis-markers t)
+
 ;; Font
 ;(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 120)
 ;(set-face-attribute 'default nil :family "Ubuntu Mono" :height 140)
-(set-face-attribute 'default nil :family "Hack" :height 109) ; was 120
-;(set-face-attribute 'default nil :family "PragmataPro" :height 120)  
+;(set-face-attribute 'default nil :family "Hack" :height 109) ; was 120
+(set-face-attribute 'default nil :family "PragmataPro" :height 120)  
 ;(set-face-attribute 'default nil :family "Iosevka" :height 120) ; or: Iosevka Regular at 140
 ;(set-face-attribute 'default nil :family "IBM Plex Mono" :height 110)  
 
