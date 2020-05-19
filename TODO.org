@@ -8,6 +8,7 @@
 - [ ] check out advanced autocompletion packages e.g. Helm. Currently *ido-mode* is used. 
 - [ ] improve your TAG listing script (https://stackoverflow.com/questions/24330980/enumerate-all-tags-in-org-mode)
 - [ ] literate programming with org-babel (e.g. store your configuration in an .org file)
+- [ ] What about *backlinks* e.g. like in Zettelkasten systems?
 
 ** MELPA
 #+BEGIN_SRC elisp
