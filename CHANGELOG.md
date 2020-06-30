@@ -2,7 +2,9 @@
 
 Additions, removals, changes, fixes.
 
-## version .5 (2020-06-30)
+## version .6 (2020-06-30)
+
+* Added image display toggle
 
 * Cut various commented stuff: 
 
