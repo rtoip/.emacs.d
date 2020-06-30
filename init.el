@@ -5,7 +5,7 @@
 ;;;; Emacs basic configuration ;;;; 
 ;;;; ------------------------- ;;;; 
 
-;; version .4
+;; version .6
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -85,12 +85,13 @@
 (global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "C-c b") 'org-iswitchb)
 ;; ...
-(global-set-key (kbd "<f4>") 'visual-line-mode) ; truncate-lines nil/t
-(global-set-key (kbd "<f5>") 'org-agenda)
-(global-set-key (kbd "<f6>") 'create-tag-counts-buffer)
-(global-set-key (kbd "<f7>") 'org-store-link)
-(global-set-key (kbd "<f8>") 'calendar)
-(global-set-key (kbd "<f9>") 'kill-buffer)
+(global-set-key (kbd "<f4>") 'org-agenda)				; show org-agenda
+(global-set-key (kbd "<f5>") 'visual-line-mode) 		; truncate-lines nil/t
+(global-set-key (kbd "<f6>") 'org-toggle-inline-images) ; display inline images
+(global-set-key (kbd "<f7>") 'org-store-link)			; store link
+(global-set-key (kbd "<f8>") 'calendar)					; show calendar
+(global-set-key (kbd "<f9>") 'kill-buffer)				; kill current buffer/window
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

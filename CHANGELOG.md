@@ -2,6 +2,18 @@
 
 Additions, removals, changes, fixes.
 
+## version .5 (2020-06-30)
+
+* Cut various commented stuff: 
+
+	;; unused fonts
+	;(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 120)
+	;(set-face-attribute 'default nil :family "Ubuntu Mono" :height 140)
+	;(set-face-attribute 'default nil :family "Hack" :height 109) ; was 120
+
+	;; Line-wrapping ON
+	;(global-visual-line-mode 1)
+
 ## version .5 (2020-02-15)
 * Added *hiding/showing* of emphasis markers
 
