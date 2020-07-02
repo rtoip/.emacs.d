@@ -109,6 +109,7 @@
 	  "* %?
 %U
 "))))
+ '(org-export-backends (quote (ascii html icalendar latex md org)))
  '(package-selected-packages (quote (intero))))
 
 

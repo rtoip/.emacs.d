@@ -1,16 +1,29 @@
 
 * Try out these
 - [ ] check out MELPA
+- [ ] Deft, https://jblevins.org/projects/deft/
+- [ ] evil-mode (for vim emulation)
 - [X] inline images
+- [X] wrap/unwrap line text
 - [X] figure out how to archive things
-- [ ] plunder https://github.com/psmith1303/emacsd/blob/master/psmith.org
-- [ ] explore how well Emacs notes work with inline images and a corresponding capture functionality
+- [ ] ARCHIVE function for org-mode
+- [ ] back linking concept
+- [ ] Language Server Protocol Support https://github.com/emacs-lsp/lsp-mode
+- [ ] plunder config files e.g. https://github.com/psmith1303/emacsd/blob/master/psmith.org
 - [ ] make DEADLINE listings in agenda mode disappear when items have been scheduled. Note: Tried, did not work.
 - [ ] check out advanced autocompletion packages e.g. Helm. Currently *ido-mode* is used. 
 - [ ] improve your TAG listing script (https://stackoverflow.com/questions/24330980/enumerate-all-tags-in-org-mode)
 - [ ] literate programming with org-babel (e.g. store your configuration in an .org file)
 - [ ] What about *backlinks* e.g. like in Zettelkasten systems?
+- [ ] eval search modes:
+  - [ ] https://beepb00p.xyz/pkm-search.html
+  - [ ] https://github.com/alphapapa/org-ql
+  - [ ] find-grep
+  - [ ] folder search:  "M-x deadgrep (uses rg/ripgrep)"
+  - [ ] "M-x helm-swoop"
+- [ ] Literate programming https://www.youtube.com/watch?v=SzA2YODtgK4
 
+* Code snippets
 ** MELPA
 #+BEGIN_SRC elisp
 ;; If you don't have MELPA in your package archives:
@@ -21,6 +34,8 @@
 (package-initialize)
 (package-refresh-contents)
 #+END_SRC
-** Literate programming
-as seen in https://www.youtube.com/watch?v=SzA2YODtgK4
-** Emacs Faces
+** Markdown export
+source: https://emacs.stackexchange.com/questions/4279/exporting-from-org-mode-to-markdown
+#+BEGIN_QUOTE
+M-x customize-option and then org-export-backends and then arrow down to the checkbox to the left of 'md' and press enter to enable it (or just click on it, if running emacs graphically). Then arrow back up and over to 'Apply and Save' (or click on it). 
+#+END_QUOTE
