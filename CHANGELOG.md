@@ -2,6 +2,18 @@
 
 Additions, removals, changes, fixes.
 
+## version .7
+
+* changed status: CANCELLED --> KILLED
+* removed status DELEGATED
+* added display of days consecutivly in the agenda
+* removed some unused fonts
+* added custom set variables: 
+	* completed DEADLINES,SCHEDULED events are not displayed
+	* agenda has 14 days
+	* deadline has 14 warning days
+	* agenda starts on current day
+
 ## version .6 (2020-06-30)
 
 * Added image display toggle

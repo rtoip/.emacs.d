@@ -5,7 +5,7 @@
 ;;;; Emacs basic configuration ;;;; 
 ;;;; ------------------------- ;;;; 
 
-;; version .6
+;; version .7
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -36,12 +36,8 @@
 (setq org-hide-emphasis-markers t)
 
 ;; Font
-;(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 120)
-;(set-face-attribute 'default nil :family "Ubuntu Mono" :height 140)
 ;(set-face-attribute 'default nil :family "Hack" :height 109) ; was 120
 (set-face-attribute 'default nil :family "PragmataPro" :height 120)  
-;(set-face-attribute 'default nil :family "Iosevka" :height 120) ; or: Iosevka Regular at 140
-;(set-face-attribute 'default nil :family "IBM Plex Mono" :height 110)  
 
 ;; Answering yes and no to each question from Emacs can be tedious, a single y or n will suffice.
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -85,12 +81,12 @@
 (global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "C-c b") 'org-iswitchb)
 ;; ...
-(global-set-key (kbd "<f4>") 'org-agenda)				; show org-agenda
-(global-set-key (kbd "<f5>") 'visual-line-mode) 		; truncate-lines nil/t
-(global-set-key (kbd "<f6>") 'org-toggle-inline-images) ; display inline images
-(global-set-key (kbd "<f7>") 'org-store-link)			; store link
-(global-set-key (kbd "<f8>") 'calendar)					; show calendar
-(global-set-key (kbd "<f9>") 'kill-buffer)				; kill current buffer/window
+(global-set-key (kbd "<f4>") 'org-agenda)				         ; show org-agenda
+(global-set-key (kbd "<f5>") 'visual-line-mode) 	       ; truncate-lines nil/t
+(global-set-key (kbd "<f6>") 'org-toggle-inline-images)  ; display inline images
+(global-set-key (kbd "<f7>") 'org-store-link)		         ; store link
+(global-set-key (kbd "<f8>") 'calendar)		               ; show calendar
+(global-set-key (kbd "<f9>") 'kill-buffer)			         ; kill current buffer/window
 
 
 (custom-set-variables
@@ -98,6 +94,20 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+
+; shows days with no associated tasks in agenda view
+ '(org-agenda-show-all-dates t)
+; scheduled event/deadline does not show anymore if completed
+ '(org-agenda-skip-deadline-if-done t)
+ '(org-agenda-skip-scheduled-if-done t)
+; starts agnenda on current day
+ '(org-agenda-start-on-weekday nil)
+; set agenda window 
+ '(org-agenda-ndays 14)
+; default deadline 
+ '(org-deadline-warning-days 14)
+
+ ;; agenda files
  '(org-agenda-files
    (quote
 	("~/Documents/org/resources.org" "~/Documents/org/plan.org" "~/Documents/org/active.org")))
@@ -138,8 +148,7 @@
 ;; TODO tag declaration
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)" "ACTIVE(a)" "|" "DONE(d)")
-             (sequence "WAITING(w)" "HOLD(h)" "|" "CANCELLED(c)")
-             (sequence "|" "DELEGATED(d)"))))
+             (sequence "WAITING(w)" "HOLD(h)" "|" "KILLED(k)"))))
 
 ;; TODO tag color configuration
 (setq org-todo-keyword-faces
@@ -148,7 +157,7 @@
               ("DONE" :foreground "forest green" :weight bold)
               ("WAITING" :foreground "magenta" :weight bold)
               ("HOLD" :foreground "blue" :weight bold)
-              ("CANCELLED" :foreground "forest green" :weight bold))))
+              ("KILLED" :foreground "gray" :weight bold))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
