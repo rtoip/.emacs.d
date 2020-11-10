@@ -22,6 +22,7 @@
   - [ ] folder search:  "M-x deadgrep (uses rg/ripgrep)"
   - [ ] "M-x helm-swoop"
 - [ ] Literate programming https://www.youtube.com/watch?v=SzA2YODtgK4
+- [ ] plunder https://jamiecollinson.com/blog/my-emacs-config/
 
 * Code snippets
 ** MELPA
@@ -39,3 +40,28 @@ source: https://emacs.stackexchange.com/questions/4279/exporting-from-org-mode-t
 #+BEGIN_QUOTE
 M-x customize-option and then org-export-backends and then arrow down to the checkbox to the left of 'md' and press enter to enable it (or just click on it, if running emacs graphically). Then arrow back up and over to 'Apply and Save' (or click on it). 
 #+END_QUOTE
+** evil mode
+#+BEGIN_SRC elisp
+;; Evil-mode emulates Vim in Emacs.
+
+  (use-package evil
+    :config
+    ;; (evil-mode 1)
+    (evil-set-initial-state 'NeoTree 'emacs))
+#+END_SRC
+
+** Automatic agenda files (scan directory)
+Currently, files are added to the aganda view with the specific command 
+
+C-c [ (org-agenda-file-to-front)
+  Add file to agenda files list
+
+C-c ] (org-remove-file)
+  Remove file from list of agenda files
+
+In order to automatically add files, add the following to the config file:
+
+#+BEGIN_SRC elisp
+(setq org-agenda-files
+    (file-expand-wildcards "~/orgmode/*.org"))
+#+END_SRC

@@ -2,13 +2,17 @@
 
 Additions, removals, changes, fixes.
 
+## version .8
+
+* changed status HOLD now has a termination date (moved to completed)
+
 ## version .7
 
-* changed status: CANCELLED --> KILLED
-* removed status DELEGATED
-* added display of days consecutivly in the agenda
-* removed some unused fonts
-* added custom set variables: 
+* changed: status CANCELLED --> KILLED
+* removed: status DELEGATED
+* added: display of days consecutivly in the agenda
+* removed: some unused fonts
+* added: custom set variables
 	* completed DEADLINES,SCHEDULED events are not displayed
 	* agenda has 14 days
 	* deadline has 14 warning days
