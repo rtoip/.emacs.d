@@ -2,11 +2,11 @@
 
 Additions, removals, changes, fixes.
 
-## version .8
+## version .8 (2020-11-10)
 
 * changed status HOLD now has a termination date (moved to completed)
 
-## version .7
+## version .7 (2020-07-17)
 
 * changed: status CANCELLED --> KILLED
 * removed: status DELEGATED
